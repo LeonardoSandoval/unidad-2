@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form method="post" action="/exe_densidad">
+       <table>
+           <p>ingresa las medidas para calcular densidad</p>
+           <tr>
+               <td>m:</td>
+               <td><input type="number" name="m" /></td>
+           </tr>
+           <tr>
+               <td>v:</td>
+               <td><input type="number" name="v" /></td>
+           </tr>
+         </table>
+       <p><input type="submit" name="btn_calc"
+         value="Calcular Densidad" /></p>
+    </form>
+{% endblock%}

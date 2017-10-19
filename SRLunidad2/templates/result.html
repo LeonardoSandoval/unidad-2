@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block body%}
+    <h2>{{the_title}}</h2>
+    <table>
+         <tr>
+            <td>Variables Ingresadas </td>
+        </tr>
+         <tr>
+            <td>m: {{the_m}}</td>
+        </tr>
+         <tr>
+            <td>v: {{the_v}}</td>
+        <tr>
+            <td>Resultado:{{the_result}}</td>
+        </tr>
+    </table>
+    <p><a href="/entry">Calcular otra Densidad</a></p>
+{% endblock%}
